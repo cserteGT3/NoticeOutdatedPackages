@@ -5,14 +5,14 @@ My goal is to notice every package of these.
 
 ## Workflow
 
-1. Iterate through all registered packages.
+1. Iterate through all [registered](https://github.com/JuliaRegistries/General) packages.
 2. Check the date of the last commit on branch `master` and `gh-pages`.
 	* Use [GitHub.jl](https://github.com/JuliaWeb/GitHub.jl).
 	* Or cloning every single package (see `./git-checkout` for comparison of cloning methods).
 3. Save everything into a database (csv file).
 	* Followings are planned to save:
-		* Project TOML?
-		* Date of last commit on ´master´ and `gh-pages`
+		* `Package.toml` or package name, repo, UUID(?)
+		* Date of last commit on `master` and `gh-pages`
 		* Date of check
 4. Processing the database.
 5. Notifying packages whose docs is outdated (`GitHub.jl`).
