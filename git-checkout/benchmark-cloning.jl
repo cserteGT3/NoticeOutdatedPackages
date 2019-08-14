@@ -6,9 +6,9 @@ const cmds = [`git clone -q https://github.com/tlienart/JuDoc.jl.git t`,
 		`git clone -q --depth 1 --no-single-branch --no-tags https://github.com/tlienart/JuDoc.jl.git t`]
 
 function test(command)
-	mkdir("t")
+	mkdir("temp")
 	run(command)
-	rm("t/", force=true, recursive=true)
+	rm("temp/", force=true, recursive=true)
 end
 
 function testall(A)
