@@ -1,0 +1,9 @@
+command,time [s],time (w mkdir&rm),space [MB],size,log works,git log origin/gh-pages,co gh-pages
+git clone,2.7,3.054,3.67,3 682 505 bytes,y,y,y
+git clone --no-checkout,2.6,3.264,2.68,,y,y,y
+git clone --bare,2.7,,2.68,,y,n,n
+git clone --mirror,2.9,,2.69,,y (slow),n,n
+git clone --depth 1,7.2,,1.63,,y,n,n
+git clone --depth 1 --no-single-branch,2.1,2.197,1.71,1 636 689 bytes,y,y,y
+git clone --shallow-submodules,6.6,,1.63,,y,n,n
+git clone --depth 1 --no-single-branch --no-tags,2,2.136,1.64,1 563 683 bytes,y,y,y
